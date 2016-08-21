@@ -4,10 +4,11 @@ With this you can get quickly up and running with Node.js development in a Docke
 ### How to install
 - Download and install Docker for Windows: https://www.docker.com/products/docker#/windows
 - Once Docker is installed, make sure you go to `Settings > Shared Drives` and share the drive on which you will be running the project
-- Go inside the project's folder, and run: `run.bat` in Windows Powershell
-- When you visit http://localhost in your browser, you should see: `"it is aliiiive"`
+- Inside the project's folder, run: `install.bat`
 
 ### How to develop
+- Inside the project's folder, run: `run.bat`
+- When you visit http://localhost in your browser, you should see: `"it is aliiiive"`
 - Edit the source code
-- Type in `rs` into the Powershell console (to reload the running server, which was automatically started by `nodemon`)
-- Refresh the browser
+- Type in `rs` into the console where you ran `run.bat` (this reloads the running server, which was automatically started by `nodemon`)
+- Refresh the browser to see the change
