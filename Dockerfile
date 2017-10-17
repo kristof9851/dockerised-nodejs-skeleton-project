@@ -1,10 +1,10 @@
-FROM ubuntu:trusty
+FROM node:8-slim
 
-RUN apt-get update -y && \
-	apt-get -y install curl && \
-	apt-get -y install man && \
-	curl -sL https://deb.nodesource.com/setup_6.x | sudo bash - && \
-	apt-get -y install nodejs && \
-	npm install -g nodemon
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-VOLUME /data/app
+COPY package.json /usr/src/app/
+RUN npm install
+COPY . /usr/src/app/
+
+CMD npm start

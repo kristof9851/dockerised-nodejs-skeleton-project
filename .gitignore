@@ -1,0 +1,5 @@
+.idea/
+node_modules
+.npmrc
+docker-env
+.DS_Store
